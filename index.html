@@ -1,21 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Cadastro Escolar</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <nav class="nav">
-           <h1>ICEIA</h1>
-        </nav>
+      <nav class="nav">
+        <h1>ICEIA</h1>
+      </nav>
     </header>
 
-    <script src="./js/script.js"></script>
-</body>
+    <main>
+      <section id="sectionForm">
+        <form class="form-control">
+          <p class="title">Cadastro Escolar</p>
 
+          <div class="input-field">
+            <input required class="input" type="text" id="Nome" />
+            <label class="label" for="Nome">Nome Completo</label>
+          </div>
+
+          <div class="input-field">
+            <input required class="input" type="text" id="CPF" />
+            <label class="label" for="CPF">CPF</label>
+          </div>
+
+          <div class="input-field">
+            <input required class="input" type="number" id="Idade" />
+            <label class="label" for="Idade">Idade</label>
+          </div>
+
+          <div class="input-field">
+            <input required class="input" type="email" id="Email" />
+            <label class="label" for="Email">Email</label>
+          </div>
+
+          <div class="input-field">
+            <input required class="input" type="text" id="Sexo" />
+            <label class="label" for="Sexo">Sexo</label>
+          </div>
+
+          <div class="input-field">
+            <input required class="input" type="password" id="Senha" />
+            <label class="label" for="Senha">Senha</label>
+          </div>
+
+          <button type="button" id="btnCadastrar">Cadastrar</button>
+        </form>
+      </section>
+      <section id="secundaria">
+        <h2 id="title2">Usuarios Cadastrados</h2>
+
+        <section id="sessao-divs"></section>
+        <div id="sessao-edicao"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Feito por Luiz Miguel</p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
