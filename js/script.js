@@ -49,7 +49,7 @@ function mostraTela() {
     apagar.className = "button-apagar";
 
     registrador.innerHTML = `
-            <h2>Pessoa ${contar + 1}</h2>
+            <h2>Estudante ${contar + 1}</h2>
             <p><h4>Nome Completo:</h4> ${pessoa.nome}</p>
             <p><h4>Idade:</h4> ${pessoa.idade}</p> 
             <p><h4>Gênero:</h4> ${pessoa.genero}</p>
