@@ -9,10 +9,9 @@ body {
   font-family: Arial, sans-serif;
 }
 
-
 header {
   padding: 20px 30px;
-  border-bottom:#cd0000 solid 3px;
+  border-bottom: #cd0000 solid 3px;
   background-color: #0000cd;
   color: #ccc;
 }
@@ -21,16 +20,17 @@ header {
   margin: 20px;
   background-color: #ffffff;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-  width: 400px;
+  width: 320px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
   padding: 25px;
   border-radius: 8px;
+  border: #0000cd solid 1px;
 }
 .title {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 800;
 }
 .input-field {
@@ -43,7 +43,7 @@ header {
   width: 100%;
   outline: none;
   border-radius: 8px;
-  height: 45px;
+  height: 35px;
   border: 1.5px solid #ecedec;
   background: transparent;
   padding-left: 10px;
@@ -73,22 +73,23 @@ header {
 }
 #btnCadastrar {
   margin-top: 30px;
-  height: 55px;
-  background: #f2f2f2;
+  height: 40px;
   border-radius: 11px;
   border: 0;
   outline: none;
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
-  background: linear-gradient(180deg, #363636 0%, #1b1b1b 50%, #000000 100%);
+  background: #e00000;
   box-shadow: 0px 0px 0px 0px #ffffff, 0px 0px 0px 0px #000000;
   transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
   cursor: pointer;
 }
 
 #btnCadastrar:hover {
-  box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #0000003a;
+  background: #cd0000;
+  box-shadow: 0px 0px 0px 2px #ffffff,
+    0px 0px 0px 4px hsla(244, 100%, 51%, 0.781);
 }
 
 #sectionForm {
@@ -99,7 +100,7 @@ header {
 
 #secundaria h2 {
   text-align: center;
-  color: #e9d631;
+  color: #0011f8;
   margin: 10px;
 }
 .registrador {
@@ -133,13 +134,16 @@ header {
 .editar:hover {
   background-color: #ff0000;
 }
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    border-top:#cd0000 solid 3px;
-    background-color: #0000cd;
-    color: #ccc;
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-top: #cd0000 solid 3px;
+  background-color: #0000cd;
+  color: #ccc;
 }
